@@ -27,7 +27,7 @@ window.addEventListener('beforeinstallprompt', (e) => {
 
   // Create the site icon
   const icon = document.createElement('img');
-  icon.src = 'https://raw.githubusercontent.com/اسم_المستودع/main/android-icon-512x512.png';
+  icon.src = 'https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgtZRfFY_20R-9ZgYYndpbFypCVJB2ipJn67YiOhT5itRX4xALa-juo-AsrFW0uqnFBO3yB-O7DwAPWxkXBpIml4cRzUmu9dKlCg6QNLVYEEZyJBKaY_9zke-Rn71VkRUV-h6c31OHGFWL_c5ULpgcbDxxNWd_a7iL5RwwdtOmp9pFMCBDLFBtGU1GcQTw/s320/android-icon-512x512.png';
   icon.style.cssText = 'width: 40px; height: 40px; margin-left: 10px;';
 
   // Create the prompt text
