@@ -1,6 +1,6 @@
 const CACHE_NAME = "assiutdoctors-cache-v1";
 const urlsToCache = [
-  "/",
+  "https://o.assiutdoctors.com/?m=1",
    "/p/specialties.html?m=1",
    "/p/pharmacies.html?m=1",
 ];
