@@ -1,7 +1,7 @@
 const CACHE_NAME = "assiutdoctors-cache-v1";
 const urlsToCache = [
   "https://o.assiutdoctors.com/",
-
+"https://www.assiutdoctors.com/",
 ];
 
 self.addEventListener("install", function (event) {
