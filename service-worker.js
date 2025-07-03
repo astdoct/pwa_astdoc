@@ -1,25 +1,22 @@
 const CACHE_NAME = "assiutdoctors-cache-v1";
 const urlsToCache = [
   "/",
-  "/index.html",
-  // يمكنك إضافة صفحات ثابتة مثل:
-  // "/p/doctors.html"
+   "/p/specialties.html?m=1",
+   "/p/pharmacies.html?m=1",
 ];
 
 self.addEventListener("install", function (event) {
   event.waitUntil(
-    caches.open(CACHE_NAME)
-      .then(function (cache) {
-        return cache.addAll(urlsToCache);
-      })
+    caches.open(CACHE_NAME).then(function (cache) {
+      return cache.addAll(urlsToCache);
+    })
   );
 });
 
 self.addEventListener("fetch", function (event) {
   event.respondWith(
-    caches.match(event.request)
-      .then(function (response) {
-        return response || fetch(event.request);
-      })
+    caches.match(event.request).then(function (response) {
+      return response || fetch(event.request);
+    })
   );
 });
